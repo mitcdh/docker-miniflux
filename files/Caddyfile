@@ -1,0 +1,14 @@
+:2015
+startup php-fpm
+gzip
+fastcgi / 127.0.0.1:9000 php
+log stdout
+errors stderr
+root /www/public
+status 403 /data
+git {
+	repo https://github.com/miniflux/miniflux.git
+	path ../miniflux-src
+	interval 86400
+	then /bin/sh /www/miniflux-install.sh
+}
