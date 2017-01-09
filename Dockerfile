@@ -2,7 +2,7 @@ FROM mitcdh/caddy-php
 MAINTAINER Mitchell Hewes <me@mitcdh.com>
 
 RUN apk --update add \
-    php7-pdo_mysql && \
+    php7-pdo_pgsql && \
     rm -rf /var/cache/apk/*
 
 COPY files/miniflux-vol.sh /caddy-bootstrap/pre-run/01_miniflux-vol
