@@ -8,6 +8,7 @@
 * `DB_USERNAME`='postgres'
 * `DB_PASSWORD`='mysecretpassword'
 * `DB_NAME`='miniflux'
+* `BASE_URL`='https://myserver.com/miniflux'
 
 ### Structure
 * `/www/public`: Web root
